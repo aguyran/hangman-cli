@@ -1,8 +1,8 @@
 from images import IMAGES,totalLetters
 import random
 def load_word():
-    #Change File Name
-    fileptr = open(r"E:\Stuff\ruby\hangman-cli\words.txt","r")
+    #Change File Name to your local directory
+    fileptr = open(r"words.txt","r")
     filelist = fileptr.readline().split()
     fileptr.close()
     word = filelist[random.randint(0,len(filelist)-1)]
